@@ -160,14 +160,14 @@
         padding: 5px;
         margin: 5px;
         display:block;
-        width:20vw;
+        width:16vw;
         height:50vh;
         text-align: center;
         align-content: center;
       }
 
       .organizer-card img {
-        max-width: 19vw;
+        max-width: 15vw;
         max-height: 30vh;
         height: auto;
       }
@@ -349,7 +349,7 @@ position: absolute;
                     overflow-y: auto;
                     padding: 5px;
                     width:100vw;
-                    top:50px;
+                    top:20vh;
                     font-size:0.8em;
                   
                 }
@@ -363,7 +363,7 @@ position: absolute;
                 .button-container a {
                     margin: 10px 0;
                     width: 100%; 
-                    height:10vh;/* Make buttons full-width */
+                    height:8vh;/* Make buttons full-width */
                 }
            
 
@@ -416,11 +416,19 @@ position: absolute;
         max-width: 100%;
         max-height: 100%;
     }
+    #r{
+      bottom:100px;
+
+    }
 
         /* Ensure that the back button does not overlap with the logos */
        
       }
-         
+      @media (min-width: 768px){
+        #r{
+          left:20px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -442,10 +450,13 @@ position: absolute;
 
           <img src="assets/spectrum.png" alt="Logo 3" />
                </div>
-    <h2 class="title">
+    <h2 class="title" style="top:80px">
       5th International Students' Conference on Current Advancement in Science &
       Technology
     </h2>
+    <h3 class="title" style="top:110px">
+      19th-21st January, 2024
+    </h3>
     <div class="button-container">
       <a href="#" id="btn1">
         <span></span>
@@ -519,6 +530,8 @@ position: absolute;
       </a>
     </div>
     <a class="flash-button" href="https://edas.info/N31592">Submit Your Paper Here</a>
+    <a class="flash-button" id="r" href="https://iem.edu.in/spectrum-2024/" style="background-color:red;z-index: 10;">>>Register Here</a>
+    
     <div class="dev"><a ><i>Developed By:<br><h2 id="dev">Roshan Rateria</h2></i></a>
     </div>
      <!-- Replace "BACK" with a previous sign (arrow) and position it -->
@@ -714,13 +727,23 @@ position: absolute;
         </div>
   
         <div class="organizer-card">
-            <img src="assets/deb.jpeg">
-          <h3>
-              Debmalya Sain<br />
-              <i>IIIT Raichur</i>
-          </h3>
-          
-        </div>
+          <img src="assets/deb.jpeg">
+        <h3>
+            Debmalya Sain<br />
+            <i>IIIT Raichur</i>
+        </h3>
+        
+      </div>
+      
+      <div class="organizer-card">
+        <img src="assets/alex.png">
+      <h3>
+        Alexander Streltsov<br />
+          <i>University of Warsaw, Poland</i>
+      </h3>
+      
+    </div>
+    
   
         <div class="organizer-card">
           
@@ -734,7 +757,7 @@ position: absolute;
           
             <img src="assets/manik.jpeg">
           <h3>
-              Prof. Manik Banik<br />
+               Manik Banik<br />
             <i>S.N. Bose National Centre for Basic Sciences, Kolkata, India</i>
           </h3>
         </div>
@@ -802,15 +825,23 @@ position: absolute;
         "
       >
         <h2>Organising Committee</h2>
-        <p>
-          ➢Prof. Dr. Satyajit Chakrabarti, Chief Patron President, IEM, Kolkata<br />
-          ➢Prof. Dr. Satyajit Chakrabarti, Chief Patron Director, IEM, Kolkata<br />
-          ➢Prof. Dr. Arun Kumar Bar, Patron Principal, IEM, Kolkata<br />
-          ➢Prof. Prabir Kumar Das, Chair and Head of the Dept., Dept. of BSH, IEM, Kolkata<br />
-          ➢Prof. Koyel Ganguly, Co-Chair , Professor ,  IEM, Kolkata <br />
-          ➢Dr. Arnab Basu, Convener, IEM, Kolkata<br />
-          ➢Dr. Ranabir Banik, Convener, IEM, Kolkata<br />
-          ➢Dr. Anubhab Ray, Convener, IEM, Kolkata
+        <p style="font-size:0.7em">
+          ➢Chief Patron: Prof. Satyajit Chakrabarti,
+          President, IEM, Kolkata<br />
+          ➢Patron: Prof. Satyajit Chakrabarti, Director, IEM,
+          Kolkata<br />
+          ➢Chief Advisor: Prof. Arun Kumar Bar, Principal,
+          IEM, Kolkata<br />
+          ➢Chair: Prof. Prabir Kumar Das, Head of the Dept.,
+          Dept. of BSH, IEM, Kolkata<br />
+          ➢Co-Chair: Prof. Koyel Ganguly, Professor, IEM,
+          Kolkata<br />
+          ➢Convener: Prof. Arnab Basu, IEM, Kolkata<br />
+          ➢Convener: Prof. Ranabir Banik, IEM, Kolkata<br />
+          ➢  Convener: Prof. Anubhab Ray, IEM, Kolkata<br>
+          ➢ Coordinator: Prof. Abhijit Kargupta, IEM, Kolkata 
+
+
         </p>
       </div>
 
